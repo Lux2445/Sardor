@@ -1,5 +1,4 @@
 import { useState, useRef, useEffect } from "react";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 import Mans from "../../../assets//img/png/mans.png";
 import Womans from "../../../assets/img/png/womans.png";
 import Kids from "../../../assets/img/png/kids.png";
@@ -63,7 +62,6 @@ const ThirdSection = () => {
         </div>
         <div className="slider">
             <button className="arrow" onClick={handleLeftArrowClick}>
-            <FaChevronLeft />
             </button>
             <div className="part-carusel" ref={carouselRef}>
             <div
@@ -120,7 +118,6 @@ const ThirdSection = () => {
             </div>
             </div>
             <button className="arrow" onClick={handleRightArrowClick}>
-            <FaChevronRight />
             </button>
         </div>
       </div>
