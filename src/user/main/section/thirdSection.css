@@ -1,0 +1,172 @@
+.third-section {
+    display: flex;
+    /* padding: 40px; */
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.third-section-part-img {
+    background: #13eded;
+    height: 460px;
+    flex: 1 1 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.third-section-part-image {
+    width: 100%;
+    max-width: 300px;
+    object-fit: cover;
+}
+
+.third-section-part-carusel {
+    padding: 20px;
+    flex: 2 1 400px;
+    max-width: 800px;
+    min-width: 250px
+}
+
+.part-title h1 {
+    font-weight: 600;
+    font-size: 24px;
+    margin-bottom: 15px;
+    text-align: start;
+}
+
+.part-title p {
+    margin-bottom: 25px;
+    max-width: 550px;
+    font-size: 14px;
+    text-align: start;
+}
+
+.part-carusel {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    max-width: 100%;
+    overflow: hidden;
+}
+
+.part-carusel-item {
+    display: flex;
+    gap: 20px;
+    text-align: center;
+    flex-wrap: nowrap;
+}
+
+.item-card-img {
+    width: 150px;
+    height: 200px;
+}
+
+.item-card-text {
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 14px;
+}
+
+.arrow {
+    cursor: pointer;
+    font-size: 20px;
+    padding: 10px;
+}
+
+.part-carusel-wrapper {
+    display: flex;
+    gap: 20px;
+    transition: translate;
+    transition-property: transform;
+    transition-duration: 300ms;
+    transition-timing-function: ease-in-out;
+}
+
+.slider {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 10px;
+}
+
+
+
+@media (max-width: 1024px) {
+    .third-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .third-section-part-carusel {
+        padding: 20px 10px;
+        max-width: 90%;
+    }
+
+    .item-card-img {
+        width: 120px;
+        height: 160px;
+    }
+
+    .item-card-text {
+        font-size: 12px;
+    }
+
+    .part-title h1 {
+        font-size: 20px;
+    }
+
+    .part-title p {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 768px) {
+    .item-card-img {
+        width: 100px;
+        height: 140px;
+    }
+
+    .part-title h1 {
+        font-size: 18px;
+    }
+
+    .part-title p {
+        font-size: 10px;
+    }
+
+    .arrow {
+        font-size: 16px;
+    }
+
+    .third-section-part-carusel {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .third-section-part-img {
+        height: 460px;
+    }
+
+    .third-section{
+        padding: 20px;
+    }
+    .item-card-img {
+        width: 80px;
+        height: 120px;
+    }
+
+    .item-card-text {
+        font-size: 10px;
+    }
+
+    .arrow {
+        font-size: 14px;
+    }
+
+    .slider {
+        align-items: center;
+    }
+
+}

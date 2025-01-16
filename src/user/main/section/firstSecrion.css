@@ -1,0 +1,78 @@
+.container {
+    position: relative;
+    padding: 2.25rem;
+  }
+  
+  .photo-grid {
+    display: flex;
+  }
+  
+  .photo-block {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+  }
+  
+  .photo-block.lime {
+    background-color: #84cc16;
+  }
+  
+  .photo-block.yellow {
+    background-color: #facc15;
+  }
+  
+  .photo-block.orange {
+    background-color: #f97316;
+  }
+  
+  .photo {
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .overlay-content {
+    background-color: rgba(255, 255, 255, 0.9);
+    text-align: center;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    max-width: 32rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+    font-weight: bold;
+    color: #1f2937;
+  }
+  
+  .subtitle {
+    font-size: 1.125rem;
+    color: #4b5563;
+    margin-top: 1rem;
+  }
+  
+  .catalog-button {
+    margin-top: 1.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #1f2937;
+    color: #ffffff;
+    font-size: 0.875rem;
+    font-weight: medium;
+    border-radius: 9999px;
+    transition: background-color 0.3s;
+    cursor: pointer;
+  }
+  
+  .catalog-button:hover {
+    background-color: #374151;
+  }
