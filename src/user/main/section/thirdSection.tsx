@@ -62,6 +62,7 @@ const ThirdSection = () => {
         </div>
         <div className="slider">
             <button className="arrow" onClick={handleLeftArrowClick}>
+                &lt;
             </button>
             <div className="part-carusel" ref={carouselRef}>
             <div
@@ -118,6 +119,7 @@ const ThirdSection = () => {
             </div>
             </div>
             <button className="arrow" onClick={handleRightArrowClick}>
+                &gt;
             </button>
         </div>
       </div>
